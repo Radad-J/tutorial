@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ProductsService } from '../services/products.service';
 import { Products } from '../../types';
+import { ProductComponent } from "../components/product/product.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ProductComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
